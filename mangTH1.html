@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>taoVaThaoTacVoiMang</title>
+</head>
+<body>
+<input type="text" id ="text"/>
+<input type="button" id="add" value="Add"onclick="add_element()">
+<input type="button" id="dp" value="Display" onclick="display_element() ">
+<div id="result"></div>
+
+<script>
+    let x=0;
+    let array=Array();
+    function add_element(){
+        array[x]=document.getElementById("text").value;
+        alert(`Phần tử : ${array[x]} đã được thêm vào mảng `)
+        x++;
+        document.getElementById("text").value="";
+    }
+    function display_element(){
+        let e="<hr/>";
+        for (let i = 0; i < array.length; i++) {
+            e+="Phần tử "+ i + "=" + array[i] + "<br>";
+        }document.getElementById("result").innerHTML=e;
+    }
+
+
+</script>
+</body>
+</html>

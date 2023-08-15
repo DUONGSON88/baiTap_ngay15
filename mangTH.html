@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mang</title>
+</head>
+<body>
+<script>
+    let mang = [1, 7, 5, 9, 2, 6]
+    //1. in ra các phần tử trong mảng
+    // console.log(mang)
+    //2. in ra các phần tử ở vị trí chẵn trong mảng
+    // for (let i = 0; i <mang.length ; i++) {
+    //     if(i%2===0){
+    //         console.log(`Các phần tử chẵn trong ${mang} là ${mang[i]}`)
+    //     }
+    //
+    // }
+    //3.In ra các phần tử chẵn trong mảng
+    // for (let i = 0; i <mang.length ; i++) {
+    //     if(mang[i]%2===0){
+    //         console.log(mang[i])
+    //     }
+    //
+    // }
+    //4.In ra tổng các phần tử chẵn trong mảng
+    // let tong=0;
+    // for (let i = 0; i < mang.length; i++) {
+    //     if (mang[i] % 2 === 0) {
+    //         tong=tong+mang[i]
+    //     }
+    // }console.log(`Tổng các phần tử chẵn trong mảng là ${tong}`)
+    //5. In ra tổng các phần tử lớn hơn 5 trong mảng
+    // let tong=0;
+    // for (let i = 0; i <mang.length ; i++) {
+    //     if (mang[i]>5){
+    //         tong=tong+mang[i]
+    //     }
+    // }console.log(`Tổng các phần tử lớn hơn 5 trong mảng là ${tong}`)
+    //6.In ra các phần tử chia 7 dư 2 trong mảng
+    // let tong=0;
+    // for (let i = 0; i <mang.length ; i++) {
+    //     if (mang[i]%7===2){
+    //         tong=tong+mang[i];
+    //     }
+    // }console.log(`Tổng các phần tử chia 7 dư 2 trong mảng là ${tong}`)
+    //7.in ra max trong mảng
+    // let  max=mang[0];
+    // for (let i = 0; i <mang.length; i++) {
+    //     if(mang[i]>max){
+    //         max=mang[i]
+    //     }
+    // }console.log(`Phần tử có giá trị lớn nhất trong mảng là ${max}`)
+    //8.In ra max của các phần tử chẵn trong mảng
+    // let max=mang[0];
+    // for (let i = 0; i <mang.length ; i++) {
+    //     if (mang[i]%2===0){
+    //         if(mang[i]>max){
+    //             max=mang[i];
+    //         }
+    //     }
+    //
+    // }console.log(`Phần tử lớn nhất trong các phần tử chẵn trong mảng là ${max}`)
+    //9.In ra số lượng các phần tử chia hết cho 5 trong mảng
+    // for (let i = 0; i <mang.length ; i++) {
+    //     if(mang[i]%5===0){
+    //         console.log(`Các phần tử trong mảng chia hết cho 5 là ${mang[i]}`)
+    //     }
+    // }
+    //10.In ra trung bình các phần tử chia hêt cho  3 trong mảng
+    let total=0;
+    let count=0;
+    let TB=0;
+    for (let i = 0; i <mang.length ; i++) {
+        if (mang[i]%3===0){
+            count++;
+            total+=mang[i];
+        }TB=total/count;
+    }console.log(`Trung bình các phần tử chia hết cho 3 là ${TB}`)
+
+
+
+
+</script>
+
+</body>
+</html>
