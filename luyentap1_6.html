@@ -7,17 +7,26 @@
 <body>
 <script>
     let number =[1,23,4,21,15,123];
-    let V=+prompt("Hay  nhap V");
-    let co=false;
-    for (let i = 0; i <number.length ; i++) {
-        if (V !== number[i]) {
-            alert(`V is in the array`)
-            co = true
-        }else {
-            alert(`V is not in the array`)
-        }
+    // let V=+prompt("Hay  nhap V");
+    // let flag=false;
+    // for (let i = 0; i <number.length ; i++) {
+    //     if (V === number[i]) {
+    //
+    //         flag = true;
+    //     }
+    // }
+    // if (flag){
+    //     alert("V is in array")
+    // }else {
+    //     alert("V is not in array")
+    // }
+    //Cach 2 dung index0f
+    let v=+prompt("nhap V");
+    if (number.indexOf(v)!==-1){
+        alert("V is in array")
+    }else {
+        alert("V is not in array")
     }
-
 
 </script>
 
